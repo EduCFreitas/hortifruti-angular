@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row my-5">
+        <div class="col-12">
+            <!-- Cadastro produtos -->
+            <h3 class="text-center mb-4 text-monospace">Editar produto</h3>
+            <div class="text-center">
+                <img src="{{ produto.imagem }}" alt="Imagem do produto a ser editado">
+            </div>
+            
+            <div class="form-group">
+                <label for="nome" class="text-monospace">Nome:</label>
+                <input type="text" name="nome" id="nome" class="form-control" placeholder="{{ produto.nome }}" [(ngModel)]="produto.nome">
+            </div>
+            <div class="form-group text-monospace">
+                <label for="preco" class="text-monospace">Preço:</label>
+                <input type="number" name="preco" id="preco" class="form-control" placeholder="Digite o preço do produto" [(ngModel)]="produto.preco">
+            </div>
+            <div class="form-group text-monospace">
+                <label for="imagem" class="text-monospace">Imagem:</label>
+                <input type="text" name="imagem" id="imagem" class="form-control" placeholder="Digite a URL da imagem do produto" [(ngModel)]="produto.imagem"> 
+            </div>
+            <div class="form-group text-monospace">
+                <label for="qtdEstoque" class="text-monospace">Quantidade em estoque:</label>
+                <input type="number" name="qtdEstoque" id="qtdEstoque" class="form-control" placeholder="Digite a quantidade em estoque" [(ngModel)]="produto.qtdEstoque">
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-outline-info w-25" (click)="salvar()">Salvar</button>
+            </div> <!-- Fim cadastro produtos-->
+        </div>
+    </div>
+</div>
