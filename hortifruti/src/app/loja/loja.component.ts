@@ -12,7 +12,7 @@ import { Location } from '@angular/common';
 export class LojaComponent implements OnInit {
   
   listaProdutos:Produto[]
-  produto:Produto = new Produto
+  produto:Produto = new Produto()
   alerta:boolean = false
   
   constructor(private produtosService:ProdutosService, private route:ActivatedRoute, private router:Router, private locationPage:Location) { }

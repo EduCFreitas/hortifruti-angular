@@ -10,7 +10,7 @@ import { Produto } from '../model/Produto';
 export class ListaProdComponent implements OnInit {
 
   listaProdutos:Produto[]
-  produto:Produto = new Produto
+  produto:Produto = new Produto()
 
   constructor(private produtosService:ProdutosService) { }
 

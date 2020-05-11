@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class EditarComponent implements OnInit {
 
-  produto:Produto = new Produto
+  produto:Produto = new Produto()
 
   constructor(private produtosService:ProdutosService, private route: ActivatedRoute, private router:Router) { }
 
